@@ -15,8 +15,6 @@ class Solution {
                 D++;
            
         }
-       if((L-R)==0&&(U-D)==0)
-            return true;
-    return false;
+       return (L-R)==0 && (U-D)==0;          
     }
 }
