@@ -6,15 +6,15 @@ class Solution {
         int D = 0;
         for(int i =0 ; i< moves.length();i++){
             if(moves.charAt(i)=='L')
-                L++;
+                R--;
             else if(moves.charAt(i)=='R')
                 R++;
             else if(moves.charAt(i)=='U')
-                U++;
+                D--;
             else if(moves.charAt(i)=='D')
                 D++;
            
         }
-       return (L-R)==0 && (U-D)==0;          
+       return R==0 && D==0;          
     }
 }
